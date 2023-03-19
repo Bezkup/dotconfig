@@ -1,6 +1,0 @@
-set $mod Mod4
-include $HOME/.config/i3/configs/startup.conf
-include $HOME/.config/i3/configs/bindings.conf
-include $HOME/.config/i3/configs/workspace.conf
-include $HOME/.config/i3/configs/bar.conf
-include $HOME/.config/i3/configs/ui.conf
