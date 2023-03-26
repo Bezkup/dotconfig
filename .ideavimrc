@@ -1,0 +1,65 @@
+sethandler <C-2> a:ide
+sethandler <C-6> a:ide
+sethandler <C-A> a:ide
+sethandler <C-B> a:ide
+sethandler <C-C> a:ide
+sethandler <C-D> a:ide
+sethandler <C-E> a:ide
+sethandler <C-F> a:ide
+sethandler <C-G> a:ide
+sethandler <C-H> a:ide
+sethandler <C-I> a:ide
+sethandler <C-J> a:ide
+sethandler <C-K> a:ide
+sethandler <C-L> a:ide
+sethandler <C-M> a:ide
+sethandler <C-N> a:ide
+sethandler <C-O> a:ide
+sethandler <C-P> a:ide
+sethandler <C-Q> a:ide
+sethandler <C-R> a:ide
+sethandler <C-S> a:ide
+sethandler <C-T> a:ide
+sethandler <C-U> a:ide
+sethandler <C-V> a:ide
+sethandler <C-W> a:ide
+sethandler <C-X> a:ide
+sethandler <C-Y> a:ide
+sethandler <C-[> a:ide
+sethandler <C-]> a:ide
+
+" move line or visually selected block - alt+j/k
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+" move split panes to left/bottom/top/right
+ nnoremap <A-h> <C-W>H
+ nnoremap <A-j> <C-W>J
+ nnoremap <A-k> <C-W>K
+ nnoremap <A-l> <C-W>L
+" move between panes to left/bottom/top/right
+ nnoremap <C-h> <C-w>h
+ nnoremap <C-j> <C-w>j
+ nnoremap <C-k> <C-w>k
+ nnoremap <C-l> <C-w>l
+" others remap
+ nnoremap q b
+ nnoremap b q
+ vnoremap q b
+ vnoremap b q
+ nnoremap b q
+ nnoremap q b
+ nnoremap Q ^
+ nnoremap E $   
+ vnoremap <Tab> >gv
+ inoremap <Tab> >gv
+ nnoremap <Tab> >gv
+" Press i to enter insert mode, and ii to exit insert mode.
+:inoremap ii <Esc>
+:inoremap jk <Esc>
+:inoremap kj <Esc>
+:vnoremap jk <Esc>
+:vnoremap kj <Esc>
+
+
